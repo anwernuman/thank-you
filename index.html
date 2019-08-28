@@ -10,7 +10,7 @@
         let d = new Date();
         var url_string = window.location.href; //window.location.href
         var url = new URL(url_string);
-        var urlParam = url.getAll('successId');
+        var urlParam = url.get('successId');
        // var c = url.searchParams.get("successId");
         alert("Today's date is " + d);
     </script>
