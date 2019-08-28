@@ -7,10 +7,11 @@
     <title>Today's Date</title>
     <script>
         debugger;
+        var urlParams = new URLSearchParams(window.location.search);
+        var urlParam = url.getAll('successId');
         let d = new Date();
         var url_string = window.location.href; //window.location.href
         var url = new URL(url_string);
-        var urlParam = url.get('successId');
        // var c = url.searchParams.get("successId");
         alert("Today's date is " + d);
     </script>
