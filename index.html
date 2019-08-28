@@ -8,7 +8,9 @@
     <script>
         debugger;
         let d = new Date();
-        var urlParam = urlParams.get('successId');
+        var url_string = window.location.href; //window.location.href
+        var url = new URL(url_string);
+        var c = url.searchParams.get("successId");
         alert("Today's date is " + d);
     </script>
 </head>
